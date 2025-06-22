@@ -1,15 +1,22 @@
-import Header from "../components/Header/Header";
+//  src/pages/HomePage.jsx
 
+import { Link } from "react-router-dom"; // Import Link for internal navigation
+
+// Add more image imports if needed
 
 const HomePage = () => {
 
-  return(
-    
-     <div className="page-container">
+  return (
+
+    <div className="page-container" style={{ overflow: "auto" }}>
+
+      {/* Hero/Banner Section with Image */}
+
       <div className="hero-section">
+
         <img
 
-          src="/images/college-banner.png"
+          src="/Images\college-banner.png"
 
           alt="Vivekanand College Campus"
 
@@ -23,9 +30,11 @@ const HomePage = () => {
 
           <p>Your journey to excellence starts here.</p>
 
-          {/* <Link to="/admissions" className="btn hero-btn"/> */}
+          <Link to="/admissions" className="btn hero-btn">
 
             Apply Now!
+
+          </Link>{" "}
 
         </div>
 
@@ -131,7 +140,11 @@ const HomePage = () => {
 
         <p>Ready to explore our courses?</p>
 
-        
+        <Link to="/courses" className="btn">
+
+          Explore Courses
+
+        </Link>{" "}
 
       </div>
 
